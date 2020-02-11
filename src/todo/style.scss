@@ -1,0 +1,26 @@
+.todo {
+	.form-control {
+		margin: 10px 0;
+	}
+
+	.id {
+		font-weight: bold;
+	}
+
+	.item-element {
+		text-align: center;
+		cursor: pointer;
+	}
+	
+	.text {
+		text-align: justify;
+	}
+
+	.completed {
+		opacity: 0.5;
+	}
+
+	.del {
+		color: red;
+	}
+}

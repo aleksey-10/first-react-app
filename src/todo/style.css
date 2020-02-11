@@ -1,0 +1,18 @@
+.todo .form-control {
+  margin: 10px 0; }
+
+.todo .id {
+  font-weight: bold; }
+
+.todo .item-element {
+  text-align: center;
+  cursor: pointer; }
+
+.todo .text {
+  text-align: justify; }
+
+.todo .completed {
+  opacity: 0.5; }
+
+.todo .del {
+  color: red; }
