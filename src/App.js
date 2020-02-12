@@ -6,13 +6,13 @@ import Context from './todo/context.jsx'
 
 function App() {
 
-  if (localStorage.getItem('todos') === null) {
-    localStorage.setItem('todos', '[]')
-  }
+  // let getFromLclStorage = () => {
+  //   return ( localStorage.getItem('todos') !== null ) ? JSON.parse(localStorage.getItem('todos')) : [];
+  // }
 
-  const [todos, setTodos] = React.useState(JSON.parse(localStorage.getItem('todos')) );
+  const [todos, setTodos] = React.useState([]);
 
-  localStorage.setItem('todos', JSON.stringify(todos));
+  // localStorage.setItem('todos', JSON.stringify(todos));
 
   function pushItem(text, value) {
     setTodos(todos.concat([{
@@ -53,7 +53,7 @@ function App() {
 
     resetId(todos);
   }
-  
+
   function onChangeValue(id, element, value) {
     setTodos(todos.map(todo => {
 
@@ -68,9 +68,8 @@ function App() {
   }
 
   function getSum() {
-    alert( todos.reduce( (sum, todo) => sum + +todo.value, 0  ) ); 
+    alert(todos.reduce((sum, todo) => sum + +todo.value, 0));
   }
-
 
   return (
     <Context.Provider value={{ deleteTodo, completeTodo, onChangeValue, clear, getSum }}>
@@ -79,7 +78,7 @@ function App() {
       </nav>
       <div className="container todo">
         <ToDoForm createItem={pushItem} />
-        <ToDoList todos={todos} />
+        {(todos.length) ? <ToDoList todos={todos} /> : <h3 className="no-todos">No todos yet!</h3>}
       </div>
     </Context.Provider>
   );

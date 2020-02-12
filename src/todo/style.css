@@ -1,18 +1,22 @@
 .todo .form-control {
-  margin: 10px 0; }
-
+  margin: 10px 0;
+}
 .todo .id {
-  font-weight: bold; }
-
+  font-weight: bold;
+}
 .todo .item-element {
   text-align: center;
-  cursor: pointer; }
-
+  cursor: pointer;
+}
 .todo .text {
-  text-align: justify; }
-
+  text-align: justify;
+}
 .todo .completed {
-  opacity: 0.5; }
-
+  opacity: 0.5;
+}
 .todo .del {
-  color: red; }
+  color: red;
+}
+.todo .no-todos {
+  text-align: center;
+}
