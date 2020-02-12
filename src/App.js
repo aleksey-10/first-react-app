@@ -6,7 +6,11 @@ import Context from './todo/context.jsx'
 
 function App() {
 
-  const [todos, setTodos] = React.useState(JSON.parse(localStorage.getItem('todos')));
+  if (localStorage.getItem('todos') === null) {
+    localStorage.setItem('todos', '[]')
+  }
+
+  const [todos, setTodos] = React.useState(JSON.parse(localStorage.getItem('todos')) );
 
   localStorage.setItem('todos', JSON.stringify(todos));
 
