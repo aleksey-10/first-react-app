@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "41830451feaeea054358f94aea406291",
+    "revision": "1883d962fa3647ab1528c6da674d5346",
     "url": "/first-react-app/index.html"
   },
   {
-    "revision": "3be812da22bfe4d0e4c4",
+    "revision": "ef79063a0f54502bd1b6",
     "url": "/first-react-app/static/css/main.bf4686e9.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/first-react-app/static/js/2.cf88a03e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3be812da22bfe4d0e4c4",
-    "url": "/first-react-app/static/js/main.04da8a8f.chunk.js"
+    "revision": "ef79063a0f54502bd1b6",
+    "url": "/first-react-app/static/js/main.60251dd4.chunk.js"
   },
   {
     "revision": "91f3fe1e302bd421869f",
