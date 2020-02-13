@@ -32,10 +32,10 @@ export default function ToDoItem( { todo } ) {
 				/>
 
 				<div className="item-element text col" onClick={ () => setInputText(true) } > 
-					{ inputText ? <InputData submitInput={submitValue} type={'text'} /> : todo.text	}
+					{ inputText ? <InputData submitInput={submitValue} val={todo.text} type={'text'} /> : todo.text	}
 				</div>
 				<div className="item-element value col-3" onClick={ () => setInputNumber(true) } > 
-					{	inputNumber ? <InputData submitInput={submitValue} type={'number'} /> : todo.value	} 
+					{	inputNumber ? <InputData submitInput={submitValue} val={todo.value} type={'number'} /> : todo.value	} 
 				</div>
 				<div className="item-element del col-1" onClick={ () => deleteTodo(todo.id) }> &times; </div>
 			</div>

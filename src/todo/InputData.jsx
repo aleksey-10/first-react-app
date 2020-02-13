@@ -5,6 +5,7 @@ export default function InputData( props ) {
 		<input 
 			type={props.type}
 			className="form-control"
+			defaultValue={props.val}
 			
 			onKeyDown = {
 				event => {
